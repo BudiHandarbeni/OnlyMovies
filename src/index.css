@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'), url('./fonts/Roboto-Regular.ttf') format('truetype');
+	font-display: swap;
+}
+
+.flex-center {
+	@apply flex flex-col items-center justify-center;
+}
+
+.md-nav {
+	@apply md:bg-transparent md:static md:w-2/4 md:justify-between;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #393e46;
+	color: #eeeeee;
+}
+
+::-webkit-scrollbar {
+	height: 12px;
+	width: 12px;
+	background: #4b525e;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #379173;
+	border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #4ecca3;
+}
+
+::-webkit-scrollbar-corner {
+	background: #4b525e;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
